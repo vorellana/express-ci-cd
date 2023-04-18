@@ -1,0 +1,32 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+
+# Archivos generados por el editor
+.vscode/
+*.swp
+*.swo
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de registro y datos
+log/
+*.log
+*.pid
+*.out
+
+# Archivos de respaldo
+*.bak
+*.backup
+*.orig
+
+# Archivos de configuración
+.env
+config.js
+config.json
+
+# Archivos de compilación y distribución
+build/
+dist/
