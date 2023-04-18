@@ -1,0 +1,53 @@
+{
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-ci-cd-task:1",
+  "containerDefinitions": [
+      {
+          "name": "express-ci-cd-repository",
+          "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-ci-cd-repository",
+          "cpu": 0,
+          "portMappings": [
+              {
+                  "name": "express-ci-cd-repository-3000-tcp",
+                  "containerPort": 3000,
+                  "hostPort": 0,
+                  "protocol": "tcp",
+                  "appProtocol": "http"
+              }
+          ],
+          "essential": true,
+          "environment": [],
+          "environmentFiles": [],
+          "mountPoints": [],
+          "volumesFrom": []
+      }
+  ],
+  "family": "express-ci-cd-task",
+  "executionRoleArn": "arn:aws:iam::556628320449:role/ecsTaskExecutionRole",
+  "revision": 1,
+  "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+      {
+          "name": "com.amazonaws.ecs.capability.ecr-auth"
+      },
+      {
+          "name": "ecs.capability.execution-role-ecr-pull"
+      }
+  ],
+  "placementConstraints": [],
+  "compatibilities": [
+      "EC2"
+  ],
+  "requiresCompatibilities": [
+      "EC2"
+  ],
+  "cpu": "1024",
+  "memory": "3072",
+  "runtimePlatform": {
+      "cpuArchitecture": "X86_64",
+      "operatingSystemFamily": "LINUX"
+  },
+  "registeredAt": "2023-04-18T13:31:02.196Z",
+  "registeredBy": "arn:aws:iam::556628320449:root",
+  "tags": []
+}
