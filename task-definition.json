@@ -1,13 +1,13 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-ci-cd-task:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-ci-cd-task-8:1",
   "containerDefinitions": [
       {
-          "name": "express-ci-cd-repository",
-          "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-ci-cd-repository",
+          "name": "express-ci-cd-container-8",
+          "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-ci-cd-repository:d4b7fcd1c079cd9fa9e52bf69ca04d45bc37b51b",
           "cpu": 0,
           "portMappings": [
               {
-                  "name": "express-ci-cd-repository-3000-tcp",
+                  "name": "express-ci-cd-container-8-3000-tcp",
                   "containerPort": 3000,
                   "hostPort": 0,
                   "protocol": "tcp",
@@ -21,7 +21,7 @@
           "volumesFrom": []
       }
   ],
-  "family": "express-ci-cd-task",
+  "family": "express-ci-cd-task-8",
   "executionRoleArn": "arn:aws:iam::556628320449:role/ecsTaskExecutionRole",
   "revision": 1,
   "volumes": [],
@@ -47,7 +47,7 @@
       "cpuArchitecture": "X86_64",
       "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2023-04-18T13:31:02.196Z",
+  "registeredAt": "2023-04-18T21:42:07.311Z",
   "registeredBy": "arn:aws:iam::556628320449:root",
   "tags": []
 }
