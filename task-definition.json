@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/express-15",
+          "awslogs-group": "/ecs/express-15-1",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -17,9 +17,9 @@
       "entryPoint": [],
       "portMappings": [
         {
-          "hostPort": 3000,
+          "hostPort": 80,
           "protocol": "tcp",
-          "containerPort": 3000
+          "containerPort": 80
         }
       ],
       "command": [],
@@ -37,7 +37,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-15",
+      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-15-1",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -54,7 +54,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "express-15"
+      "name": "express-15-1"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-15:1",
-  "family": "express-15",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-15-1:1",
+  "family": "express-15-1",
   "requiresAttributes": [
     {
       "targetId": null,
