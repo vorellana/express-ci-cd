@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/express-19",
+          "awslogs-group": "/ecs/express-21",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -25,7 +25,12 @@
       "command": [],
       "linuxParameters": null,
       "cpu": 0,
-      "environment": [],
+      "environment": [
+        {
+          "name": "MY_NAME",
+          "value": "Pedrito"
+        }
+      ],
       "resourceRequirements": null,
       "ulimits": null,
       "dnsServers": null,
@@ -37,7 +42,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-19",
+      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-21",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -54,7 +59,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "express-19"
+      "name": "express-21"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +69,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-19:1",
-  "family": "express-19",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-21:1",
+  "family": "express-21",
   "requiresAttributes": [
     {
       "targetId": null,

@@ -31,13 +31,17 @@
 # # Comando para ejecutar la aplicación
 # CMD [ "node", "app.js" ]
 
-
-
 # Utilizar una imagen de Node.js oficial como base
 FROM node:14-alpine
 
+# Definir variables de entorno
+ENV MY_NAME=Juan
+ENV MY_AGE=27
+ENV BACK_URL=https://es.wikipedia.org/wiki/Wikipedia:Portada
+
 # Crear un directorio para la aplicación
 WORKDIR /usr/src/app
+
 
 # Copiar el archivo package.json y package-lock.json al directorio de la aplicación
 COPY package*.json ./
@@ -48,8 +52,11 @@ RUN npm install
 # Copiar el resto del código de la aplicación
 COPY . .
 
+
 # Exponer el puerto en el que se ejecutará la aplicación
 EXPOSE 80
+
+
 
 # Comando para ejecutar la aplicación
 CMD [ "npm", "start" ]
