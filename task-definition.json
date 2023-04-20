@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/express-18",
+          "awslogs-group": "/ecs/express-19",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -37,11 +37,11 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-18",
+      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/express-19",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
-      "disableNetworking": false,
+      "disableNetworking": null,
       "interactive": null,
       "healthCheck": null,
       "essential": true,
@@ -54,7 +54,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "express-18"
+      "name": "express-19"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-18:1",
-  "family": "express-18",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/express-19:1",
+  "family": "express-19",
   "requiresAttributes": [
     {
       "targetId": null,
